@@ -20,6 +20,11 @@ wp_register_style( 'bootstrap_style', get_template_directory_uri() . '/assets/st
 // appel du style dans la page
 wp_enqueue_style( 'bootstrap_style' );
 
+// enregistrement d'un nouveau style {Google font}
+wp_register_style( 'google_font', get_template_directory_uri() . 'https://fonts.googleapis.com/css?family=Roboto:400,700|Slabo+27px' );
+// appel du style dans la page
+wp_enqueue_style( 'google_font' );
+
 // enregistrement d'un nouveau style {Main.css}
 wp_register_style( 'main_style', get_template_directory_uri() . '/assets/styles/main.css' );
 // appel du style dans la page
